@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Gloria+Hallelujah" rel="stylesheet">
+        <link rel="stylesheet" href="css/animate.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="js/wow.min.js" rel="stylesheet">
+        <link href="css/minijuego.css" rel="stylesheet">
+
+        <!--Scripts-->
+
+        <script src="js/jquery.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/minijuego.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+          new WOW().init();
+          </script>
+  </head>
+  <body>
+
+    <header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h3 class="logo">INPRESI</h3>
+        <div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><h5>Inicio</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="informacion.html"><h5>Informacion</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="prevenciones.html"><h5>Prevenciones</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acontecimientos.html"><h5>Acontecimientos</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="prueba.html"><h5>¿Que tanto sabes?</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="minijuego.html"><h5>Minijuego</h5></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    </header>
+
+    <br>
+    <center><h1 class="wow swing">Items necesarios que hay que llevar en la bolsa de vida</h1></center>
+    <center><h4 class="wow swing">(Pon encima de cada imagen el cursor para ver el nombre de cada elemento)</h4></center>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-7"><center><h4 class="wow fadeInRight">Arrastra hasta aca los objetos importantes</h4></center></div>
+        <div class="col-4"><center><h4 class="wow fadeInLeft">Arrastra hasta aca los objetos que no son importantes</h4></center></div>
+      </div>
+    </div>
+    <br>
+    <section id="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <div class="padre">
+     <div class="tipo" id="fuego" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+     <div class="tipo" id="agua" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+  <img class="pokemon wow flip" title="Botella de agua" src="imagenes/agua.png" draggable="true" ondragstart="drag(event)" id="drag1" name="fuego"/>
+  <img class="pokemon wow flip" title="Televisor" src="imagenes/television.png" draggable="true" ondragstart="drag(event)" id="drag6" name="agua"/>
+  <img class="pokemon wow flip" title="Botiquin" src="imagenes/botiquin.png" draggable="true" ondragstart="drag(event)" id="drag2" name="fuego"/>
+  <img class="pokemon wow flip" title="Linterna" src="imagenes/linterna.png" draggable="true" ondragstart="drag(event)" id="drag3" name="fuego"/>
+  <img class="pokemon wow flip" title="Lavadora" src="imagenes/lavadora.png" draggable="true" ondragstart="drag(event)" id="drag7" name="agua"/>
+  <img class="pokemon wow flip" title="Radio" src="imagenes/radio.png" draggable="true" ondragstart="drag(event)" id="drag4" name="fuego"/>
+  <img class="pokemon wow flip" title="Alimentos en lata" src="imagenes/atun.png" draggable="true" ondragstart="drag(event)" id="drag5" name="fuego"/>
+  <img class="pokemon wow flip" title="Documentos personales" src="imagenes/tarjeta.png" draggable="true" ondragstart="drag(event)" id="drag11" name="fuego"/>
+  <img class="pokemon wow flip" title="Silla" src="imagenes/sillon.png" draggable="true" ondragstart="drag(event)" id="drag8" name="agua"/>
+  <img class="pokemon wow flip" title="Licuadora" src="imagenes/licuadora.png" draggable="true" ondragstart="drag(event)" id="drag9" name="agua"/>
+  <img class="pokemon wow flip" title="Ventilador" src="imagenes/ventilador.png" draggable="true" ondragstart="drag(event)" id="drag10" name="agua"/>
+  <img class="pokemon wow flip" title="Elementos de aseo personal" src="imagenes/Aseo.png" draggable="true" ondragstart="drag(event)" id="drag12" name="fuego"/>
+</section>
+<center><h1>Respuesta:</h1></center><div id="resultado"></div>
+<center><a href="minijuego.html" class="btn btn-success">Reinicia el juego</a><center>
+  <br>
+
+  </body>
+</html>

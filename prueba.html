@@ -1,0 +1,296 @@
+﻿<html>
+<head>
+<title>Cuestionario</title>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/animate.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/prueba.css" rel="stylesheet">
+<link href="js/wow.min.js" rel="stylesheet">
+
+<!--Scripts-->
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+function resultado() {
+var p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, nota;
+
+<!-- 1ª pregunta -->
+if (document.getElementById('p11').checked==true) {p1=1}
+else {p1=0}
+<!-- 2ª pregunta -->
+if (document.getElementById('p22').checked==true) {p2=1}
+else {p2=0}
+<!-- 3ª pregunta -->
+if (document.getElementById('p33').checked==true) {p3=1}
+else {p3=0}
+<!-- 4ª pregunta -->
+if (document.getElementById('p44').checked==true) {p4=1}
+else {p4=0}
+<!-- 5ª pregunta -->
+if (document.getElementById('p52').checked==true) {p5=1}
+else {p5=0}
+<!-- 6ª pregunta -->
+if (document.getElementById('p64').checked==true) {p6=1}
+else {p6=0}
+<!-- 7ª pregunta -->
+if (document.getElementById('p73').checked==true) {p7=1}
+else {p7=0}
+<!-- 8ª pregunta -->
+if (document.getElementById('p82').checked==true) {p8=1}
+else {p8=0}
+<!-- 9ª pregunta -->
+if (document.getElementById('p94').checked==true) {p9=1}
+else {p9=0}
+<!-- 8ª pregunta -->
+if (document.getElementById('p104').checked==true) {p10=1}
+else {p10=0}
+nota=p1+p2+p3+p4+p5+p6+p7+p8+p9+p10;
+alert("Total preguntas: 10.     Respuestas correctas: " + nota);
+location.reload();
+}
+</script>
+</head>
+<body>
+
+  <header>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  	<div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <h3 class="logo">INPRESI</h3>
+      <div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html"><h5>Inicio</h5></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="informacion.html"><h5>Informacion</h5></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="prevenciones.html"><h5>Prevenciones</h5></a>
+              </li>
+  						<li class="nav-item">
+  								<a class="nav-link" href="acontecimientos.html"><h5>Acontecimientos</h5></a>
+  						</li>
+  						<li class="nav-item">
+  								<a class="nav-link" href="prueba.html"><h5>¿Que tanto sabes?</h5></a>
+  						</li>
+              <li class="nav-item">
+                  <a class="nav-link" href="minijuego.html"><h5>Minijuego</h5></a>
+              </li>
+          </ul>
+      </div>
+      </div>
+  </nav>
+  </header>
+
+<div class="container">
+<br><br>
+<center><h2>¿Que tanto sabes sobre sismos o terremotos?</h2></center>
+<br><br>
+<div class="row justify-content-center wow bounceIn">
+  <div class="col-5">
+<p><h5>1. ¿Con que herramienta se miden los terremotos?</h5></p>
+<h6><p onclick=""><input type="radio" name="pregunta1" id="p11"> Sismografo.</p></h6>
+<h6><p onclick=""><input type="radio" name="pregunta1" id="p12"> Termometro. </p></h6>
+<h6><p onclick=""><input type="radio" name="pregunta1" id="p13"> Cartografo. </p></h6>
+<h6><p onclick=""><input type="radio" name="pregunta1" id="p14"> Terremotograma. </p></h6>
+</div>
+<div class="col-2">
+<img class="wow bounceIn" src="imagenes/rendimiento.png" alt="">
+</div>
+</div>
+
+<br><br>
+
+
+<div class="row justify-content-center wow bounceIn">
+  <div class="col-5">
+<h5> <p>2. ¿Que es un mapa de riesgo?</p></h5>
+<h6><p onclick=""><input type="radio" name="pregunta2" id="p21"> Un mapa topográfico para localizar terremotos.</p></h6>
+<h6><p onclick=""><input type="radio" name="pregunta2" id="p22"> Un mapa que indica la propabilidad de que ocurra un determinado fenómeno en una zona.</p></h6>
+<h6><p onclick=""><input type="radio" name="pregunta2" id="p23"> Un mapa que indica los puntos negros de la circulación.</p></h6>
+</div>
+<div class="col-2">
+<img class="wow bounceIn" src="imagenes/mapa1.png" alt="">
+</div>
+</div>
+
+<br><br>
+
+<div class="row justify-content-center wow bounceIn">
+  <div class="col-5">
+<h5><p>3. ¿Que escala de richter es la que puede ocacionar grandes daños?</p></h5>
+<h6><p onclick=""><input type="radio" name="pregunta3" id="p31"> Menos de 3.5</p>
+<p onclick=""><input type="radio" name="pregunta3" id="p32"> 3.5 - 5.4</p>
+<p onclick=""><input type="radio" name="pregunta3" id="p33"> 7.0 - 7.9</p>
+<p onclick=""><input type="radio" name="pregunta3" id="p34"> 6.1 - 6.9</p>
+<p onclick=""><input type="radio" name="pregunta3" id="p33"> 5.5 - 6.0</p>
+<p onclick=""><input type="radio" name="pregunta3" id="p34"> 8.0 o Mayor</p></h6>
+</div>
+<div class="col-2">
+<img class="wow bounceIn" src="imagenes/niveles.png" alt="">
+</div>
+</div>
+
+<br><br>
+
+<div class="row justify-content-center wow bounceIn">
+  <div class="col-5">
+<h5><p>4. ¿Que elemento debes tener en tu casa en caso de un terremoto?</p></h5>
+<h6><p onclick=""><input type="radio" name="pregunta4" id="p41"> Televisor </p>
+<p onclick=""><input type="radio" name="pregunta4" id="p42"> Computador</p>
+<p onclick=""><input type="radio" name="pregunta4" id="p43"> Maleta</p>
+<p onclick=""><input type="radio" name="pregunta4" id="p44"> Bolsa de vida</p></h6>
+</div>
+<div class="col-2">
+<img class="wow bounceIn" src="imagenes/envio.png" alt="">
+</div>
+</div>
+<br><br>
+
+<div class="row justify-content-center wow bounceIn">
+  <div class="col-5">
+<h5><p>5. ¿Qué nombre recibe el registro gráfico de un terremoto?</p></h5>
+<h6><p onclick=""><input type="radio" name="pregunta5" id="p51"> Sismográfico. </p>
+<p onclick=""><input type="radio" name="pregunta5" id="p52"> Sismograma. </p>
+<p onclick=""><input type="radio" name="pregunta5" id="p53"> Sismografo. </p>
+<p onclick=""><input type="radio" name="pregunta5" id="p54">  Sismologísmo. </p></h6>
+</div>
+<div class="col-2">
+<img class="wow bounceIn" src="imagenes/grafico.png" alt="">
+</div>
+</div>
+<br><br>
+
+<div class="row justify-content-center wow bounceIn">
+  <div class="col-5">
+<h5><p>6. ¿Que debes hacer cuando suceda un terremoto?</p></h5>
+<h6><p onclick=""><input type="radio" name="pregunta6" id="p61"> Salir corriendo y gritar fuertemente.  </p>
+<p onclick=""><input type="radio" name="pregunta6" id="p62"> Recoger electrodomesticos y guardarlos en un lugar seguro. </p>
+<p onclick=""><input type="radio" name="pregunta6" id="p63"> ocultarse en el baño de tu casa. </p>
+<p onclick=""><input type="radio" name="pregunta6" id="p64">  Guardar la calma, ubicarse en zonas como un marco de una puerta o debajo de una mesa resistente. </p></h6>
+</div>
+<div class="col-2">
+<img class="wow bounceIn" src="imagenes/pregunta1.png" alt="">
+</div>
+</div>
+<br><br>
+
+<div class="row justify-content-center wow bounceIn">
+  <div class="col-5">
+<h5><p>7. ¿Qué nombre recibe el lugar donde se origina el terremoto?</p></h5>
+<h6><p onclick=""><input type="radio" name="pregunta7" id="p71"> Mesocentro  </p>
+<p onclick=""><input type="radio" name="pregunta7" id="p72"> Epicentro </p>
+<p onclick=""><input type="radio" name="pregunta7" id="p73"> Hipocentro </p>
+<p onclick=""><input type="radio" name="pregunta7" id="p74"> Sismocentro </p></h6>
+</div>
+<div class="col-2">
+<img class="wow bounceIn" src="imagenes/mapa.png" alt="">
+</div>
+</div>
+
+<br><br>
+
+<div class="row justify-content-center wow bounceIn">
+  <div class="col-5">
+<h5><p>8. ¿De que manera es recomendado evacuar?</p></h5>
+<h6><p onclick=""><input type="radio" name="pregunta8" id="p81"> usar un ascensor para bajar al punto de encuentro  </p>
+<p onclick=""><input type="radio" name="pregunta8" id="p82"> usar las escaleras para bajar al punto de encuentro</p>
+<p onclick=""><input type="radio" name="pregunta8" id="p83"> No se debe hacer nada </p>
+<p onclick=""><input type="radio" name="pregunta8" id="p84"> Ninguna de las anteriores </p></h6>
+</div>
+<div class="col-2">
+<img class="wow bounceIn" src="imagenes/problema.png" alt="">
+</div>
+</div>
+
+<br><br>
+
+<div class="row justify-content-center wow bounceIn">
+  <div class="col-5">
+<h5><p>9. Los terremotos se producen por:</p></h5>
+<h6><p onclick=""><input type="radio" name="pregunta9" id="p91"> Choque de mares  </p>
+<p onclick=""><input type="radio" name="pregunta9" id="p92"> Choque de vientos</p>
+<p onclick=""><input type="radio" name="pregunta9" id="p93"> Choque de objetos </p>
+<p onclick=""><input type="radio" name="pregunta9" id="p94"> Choque de placas tectónicas </p></h6>
+</div>
+<div class="col-2">
+<img class="wow bounceIn" src="imagenes/preguntandose.png" alt="">
+</div>
+</div>
+
+<br><br>
+
+<div class="row justify-content-center wow bounceIn">
+  <div class="col-5">
+<h5><p>10. ¿Que debe contener la bolsa de vida?</p></h5>
+<h6><p onclick=""><input type="radio" name="pregunta9" id="p101"> Articulos electronicos (Tableta, Computador portatil, Etc. )  </p>
+<p onclick=""><input type="radio" name="pregunta9" id="p102"> Articulos de valor(Manillas, Cadenas, Etc.)</p>
+<p onclick=""><input type="radio" name="pregunta9" id="p103"> Articulos domesticos (Vasos, Platos, Etc.) </p>
+<p onclick=""><input type="radio" name="pregunta9" id="p104"> Articulos como (Botella de agua, Botiquin, Linterna, Documento de identificacion, Etc.) </p></h6>
+</div>
+<div class="col-2">
+<img class="wow bounceIn" src="imagenes/botiquin.png" alt="">
+</div>
+</div>
+<hr id="linea">
+<center><p><input class="btn btn-primary" type="button" value=" Resultado" onclick="resultado()"/></p></center>
+
+<center><a href="http://www.websismo.csic.es/websismo.html" class="btn btn-success">Prueba un juego sobre sismos</a><center>
+<br>
+</form>
+  </div>
+</body>
+</html>
+
+
+<!--
+<div class="container">
+<br><br>
+<center><h2>¿Que tanto sabes sobre sismos o terremotos?</h2></center>
+<br><br>
+<div class="row">
+  <div class="col">
+<p><h5>¿Que debes hacer cuando suceda un sismo?</h5></p>
+<p onclick=""><input type="radio" name="pregunta1" id="p11"> Texto de la respuesta A.</p>
+<p onclick=""><input type="radio" name="pregunta1" id="p12"> Texto de la respuesta B.</p>
+<p onclick=""><input type="radio" name="pregunta1" id="p13"> Texto de la respuesta C.</p>
+<p onclick=""><input type="radio" name="pregunta1" id="p14"> Texto de la respuesta D.</p>
+</div>
+<div class="col">
+<p>Segunda pregunta del test... La respuesta es B.</p>
+<p onclick=""><input type="radio" name="pregunta2" id="p21"> Texto de la respuesta A.</p>
+<p onclick=""><input type="radio" name="pregunta2" id="p22"> Texto de la respuesta B.</p>
+<p onclick=""><input type="radio" name="pregunta2" id="p23"> Texto de la respuesta C.</p>
+<p onclick=""><input type="radio" name="pregunta2" id="p24"> Texto de la respuesta D.</p>
+</div>
+<div class="col">
+<p>tercera pregunta del test... La respuesta es C.</p>
+<p onclick=""><input type="radio" name="pregunta3" id="p31"> Texto de la respuesta A.</p>
+<p onclick=""><input type="radio" name="pregunta3" id="p32"> Texto de la respuesta B.</p>
+<p onclick=""><input type="radio" name="pregunta3" id="p33"> Texto de la respuesta C.</p>
+<p onclick=""><input type="radio" name="pregunta3" id="p34"> Texto de la respuesta D.</p>
+</div>
+<div class="col">
+<p>Cuarta pregunta del test... La respuesta es D.</p>
+<p onclick=""><input type="radio" name="pregunta4" id="p41"> Texto de la respuesta A.</p>
+<p onclick=""><input type="radio" name="pregunta4" id="p42"> Texto de la respuesta B.</p>
+<p onclick=""><input type="radio" name="pregunta4" id="p43"> Texto de la respuesta C.</p>
+<p onclick=""><input type="radio" name="pregunta4" id="p44"> Texto de la respuesta D.</p>
+</div>
+<hr>
+<p><input class="btn btn-primary" type="button" value=" Resultado" onclick="resultado()"/></p>
+</form>
+  </div>
+-->
